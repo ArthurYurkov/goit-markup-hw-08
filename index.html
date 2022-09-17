@@ -15,14 +15,14 @@
     </head>
     <body>
 <!--Logo, Nav bar, contacts-->
-        <Header class="header">
-            <div class="container navigation">
+        <header class="header">
+            <div class="container header__container">
                 <!-- logo -->
                 <a href="./index.html" class="logo">
                     Web<span class="logo__head">Studio</span>
                 </a>
                 <!-- Navigation -->
-                <nav>
+                <nav class="navigation">
                     <ul class="navigation__list list">
                         <li class="navigation__point">
                             <a href="./index.html" class="navigation__link condition">Студія</a>
@@ -49,7 +49,7 @@
                         +38 096 111 11 11</a>
                 </div>
             </div>
-        </Header>
+        </header>
 
 
 
@@ -421,7 +421,7 @@
             </div>
         </footer>
 
-<!-------- Modal -------->
+<!------- Modal -------->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal" >
                 <button class="modal__btn" data-modal-close>
@@ -444,7 +444,7 @@
                         <label>
                             Телефон
                         </label>
-                        <input type="tell" name="phone_number" class="input__size" />
+                        <input type="tel" name="phone_number" class="input__size" />
                         <svg class="input__icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
@@ -470,7 +470,7 @@
                             <use class="checkbox__icon-check" href="./images/icons.svg#icon-check"></use>
                             <use class="checkbox__icon-uncheck" href="./images/icons.svg#icon-uncheck"></use>
                         </svg>
-                        <span class="checkbox__text-link">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></span>
+                        <span class="checkbox__text">Погоджуюся з розсилкою та приймаю <a class="checkbox__text-link" href="#">Умови договору</a></span>
                     </label>
                     <button type="submit" class="input__btn">
                         Відправити

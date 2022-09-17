@@ -1,15 +1,10 @@
+// --------------------utils
+@import './utils/variables';
+
+
 // ---------------------base
 @import './base/normalize';
 @import './base/global';
-
-
-// ---------------components
-@import './components/logo';
-@import './components/backdrop';
-@import './components/checkbox';
-@import './components/input-btn';
-
-
 
 // -------------------layout
 @import './layout/header';
@@ -28,7 +23,10 @@
 @import './layout/foot-send';
 @import './layout/modalform';
 
+// ---------------components
+@import './components/logo';
+@import './components/backdrop';
+@import './components/checkbox';
+@import './components/input-btn';
 
 
-// --------------------utils
-@import './utils/variables';

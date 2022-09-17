@@ -1,3 +1,11 @@
+/* -------------variables------------- */
+:root {
+  --main-text-color: #212121;
+  --hover-color: #2196f3;
+  --sub-text-color: #757575;
+  --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 h1,
 h2,
 h3,
@@ -48,175 +56,11 @@ body {
   padding: 94px 0px;
 }
 
-.logo {
-  color: var(--hover-color);
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
-.logo__head {
-  color: #000000;
-}
-
-.logo__foot {
-  color: #ffffff;
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 10;
-  -webkit-transition: opacity 250ms, visibility 250ms;
-  transition: opacity 250ms, visibility 250ms;
-  opacity: 1;
-  visibility: visible;
-}
-
-.backdrop.is-hidden {
-  -webkit-transition: opacity 250ms, visibility 250ms;
-  transition: opacity 250ms, visibility 250ms;
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
-.modal {
-  position: relative;
-  padding: 40px;
-  width: 528px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-.modal__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-}
-.modal__btn:hover {
-  fill: var(--hover-color);
-}
-
-.input__checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
-}
-
-.checkbox__text {
-  display: block;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.checkbox__text-link {
-  color: var(--hover-color);
-  text-decoration: underline;
-}
-
-.input__checkbox-icon {
-  position: absolute;
-  opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-
-.checkbox__icon {
-  margin-right: 7px;
-}
-
-.input__checkbox-icon:checked + .checkbox__icon .checkbox__icon-uncheck {
-  opacity: 0;
-}
-
-.checkbox__icon-check {
-  opacity: 0;
-}
-
-.input__checkbox-icon:checked + .checkbox__icon .checkbox__icon-check {
-  opacity: 1;
-}
-
-.input__btn {
-  display: block;
-  background-color: var(--hover-color);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 10px 52px;
-  margin: 0 auto;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 0px solid transparent;
-  border-radius: 4px;
-  -webkit-transition: background-color var(--anim);
-  transition: background-color var(--anim);
-}
-.input__btn:focus, .input__btn:hover {
-  background-color: #188ce8;
-  -webkit-transition: var(--anim);
-  transition: var(--anim);
-}
-
 .header {
   border-bottom: 1px solid #ececec;
 }
 
-.navigation {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,9 +74,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-left: 93px;
-}
-.navigation__list:hover, .navigation__list:focus {
-  color: var(--hover-color);
 }
 
 .navigation__point + .navigation__point {
@@ -252,6 +93,9 @@ body {
   padding-bottom: 32px;
   -webkit-transition: color var(--anim), background-color var(--anim);
   transition: color var(--anim), background-color var(--anim);
+}
+.navigation__link:hover, .navigation__link:focus {
+  color: var(--hover-color);
 }
 
 .navigation__link.condition {
@@ -989,10 +833,166 @@ body {
   border-color: var(--hover-color);
 }
 
-/* -------------variables------------- */
-:root {
-  --main-text-color: #212121;
-  --hover-color: #2196f3;
-  --sub-text-color: #757575;
-  --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.logo {
+  color: var(--hover-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo__head {
+  color: #000000;
+}
+
+.logo__foot {
+  color: #ffffff;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  -webkit-transition: opacity 250ms, visibility 250ms;
+  transition: opacity 250ms, visibility 250ms;
+  opacity: 1;
+  visibility: visible;
+}
+
+.backdrop.is-hidden {
+  -webkit-transition: opacity 250ms, visibility 250ms;
+  transition: opacity 250ms, visibility 250ms;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  position: relative;
+  padding: 40px;
+  width: 528px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+.modal__btn:hover {
+  fill: var(--hover-color);
+}
+
+.input__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox__text {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.checkbox__text-link {
+  color: var(--hover-color);
+  text-decoration: underline;
+}
+
+.input__checkbox-icon {
+  position: absolute;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.checkbox__icon {
+  margin-right: 7px;
+}
+
+.input__checkbox-icon:checked + .checkbox__icon .checkbox__icon-uncheck {
+  opacity: 0;
+}
+
+.checkbox__icon-check {
+  opacity: 0;
+}
+
+.input__checkbox-icon:checked + .checkbox__icon .checkbox__icon-check {
+  opacity: 1;
+}
+
+.input__btn {
+  display: block;
+  background-color: var(--hover-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px 52px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0px solid transparent;
+  border-radius: 4px;
+  -webkit-transition: background-color var(--anim);
+  transition: background-color var(--anim);
+}
+.input__btn:focus, .input__btn:hover {
+  background-color: #188ce8;
+  -webkit-transition: var(--anim);
+  transition: var(--anim);
 }/*# sourceMappingURL=main.css.map */
