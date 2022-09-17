@@ -1,0 +1,34 @@
+// ---------------------base
+@import './base/normalize';
+@import './base/global';
+
+
+// ---------------components
+@import './components/logo';
+@import './components/backdrop';
+@import './components/checkbox';
+@import './components/input-btn';
+
+
+
+// -------------------layout
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/contacts';
+@import './layout/hero';
+@import './layout/benefits';
+@import './layout/whatwedo';
+@import './layout/team';
+@import './layout/social-icons';
+@import './layout/clients';
+@import './layout/filter';
+@import './layout/products';
+@import './layout/foot-addrs';
+@import './layout/foot-icons';
+@import './layout/foot-send';
+@import './layout/modalform';
+
+
+
+// --------------------utils
+@import './utils/variables';
