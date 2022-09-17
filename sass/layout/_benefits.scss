@@ -1,13 +1,20 @@
 .benefits__point {
-    width: 270px;
+    
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        + .benefits__point {
+            margin-left: 30px;
+        }
+    }
 }
 
-.benefits__point+.benefits__point {
-    margin-left: 30px;
-}
 
 .benefits__list {
     display: flex;
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .benefits__icon {
