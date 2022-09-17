@@ -1,5 +1,17 @@
+
 .contacts {
-    margin-left: auto;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: auto;
+        align-items: baseline;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+        display: inline-block;
+    }
 }
 
 .contacts__head {
@@ -11,18 +23,32 @@
     letter-spacing: 0.02em;
 
     display: inline-flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
     justify-content: center;
     transition: color var(--anim);
     &:hover, &:focus {
         color: var(--hover-color);
     }
+
+    @media screen and (min-width: 768px) {
+         + .contacts__head {
+            margin-top: 10px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        +.contacts__head {
+            margin-top: 0px;
+        }
+    }
 }
 
-.contacts__head+.contacts__head {
-    margin-left: 50px;
+@media screen and (min-width: 1200px) {
+    .contacts__head + .contacts__head {
+        margin-left: 50px;
+    }
 }
 
 

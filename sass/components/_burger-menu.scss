@@ -1,0 +1,10 @@
+.menu-burger {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-burger__open {
+    display: block;
+
+}
