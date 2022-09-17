@@ -315,6 +315,16 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .benefits__point {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits__point {
+    width: 354px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .benefits__point {
     width: 270px;
@@ -328,14 +338,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .benefits__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -351,8 +368,12 @@ body {
           align-items: center;
   margin-bottom: 30px;
   height: 120px;
-  width: 270px;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 1200px) {
+  .benefits__icon {
+    width: 270px;
+  }
 }
 
 .benefits__name {
@@ -362,6 +383,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .benefits__name {
+    text-align: center;
+  }
 }
 
 .benefits__text {

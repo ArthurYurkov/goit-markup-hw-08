@@ -1,5 +1,12 @@
 .benefits__point {
-    
+
+    @media screen and (max-width:767px){
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width:768px){
+        width: 354px;
+
+    }
     @media screen and (min-width: 1200px) {
         width: 270px;
         + .benefits__point {
@@ -11,9 +18,12 @@
 
 .benefits__list {
     display: flex;
-    @media screen and (max-width: 768px) {
-        flex-wrap: wrap;
+    flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
         justify-content: center;
+    }
+    @media screen and (min-width: 768px) {
+        justify-content: space-between;
     }
 }
 
@@ -23,9 +33,13 @@
     align-items: center;
     margin-bottom: 30px;
     height: 120px;
-    width: 270px;
+    
 
     background-color: #f5f4fa;
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 .benefits__name {
@@ -36,6 +50,9 @@
     text-transform: uppercase;
 
     margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .benefits__text {
