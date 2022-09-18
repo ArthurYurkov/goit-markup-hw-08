@@ -1314,6 +1314,11 @@ body {
   transition: var(--anim);
 }
 
+.menu-burger {
+  border: none;
+  color: #212121;
+  background-color: #FFFFFF;
+}
 @media screen and (min-width: 768px) {
   .menu-burger {
     display: none;
@@ -1322,4 +1327,128 @@ body {
 
 .menu-burger__open {
   display: block;
+}
+
+.menu-burger__btn {
+  color: #212121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+}
+.menu-burger__btn:active {
+  fill: var(--hover-color);
+}
+
+.burger__modal {
+  position: relative;
+  padding: 48px 40px;
+  width: 480px;
+  height: 796px;
+  background: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .burger-navigation {
+    display: block;
+  }
+}
+
+.burger-navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.burger-navigation__link {
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+  display: inline-block;
+  padding-bottom: 32px;
+  -webkit-transition: color var(--anim), background-color var(--anim);
+  transition: color var(--anim), background-color var(--anim);
+}
+.burger-navigation__link:hover, .burger-navigation__link:focus {
+  color: var(--hover-color);
+}
+
+.burger-navigation__link.condition {
+  color: var(--hover-color);
+}
+
+.burger__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.burger__contacts-mail {
+  text-decoration: none;
+  color: var(--sub-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: color var(--anim);
+  transition: color var(--anim);
+}
+.burger__contacts-mail:hover, .burger__contacts-mail:focus {
+  color: var(--hover-color);
+}
+
+.burger__contacts-number {
+  text-decoration: none;
+  color: var(--sub-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: color var(--anim);
+  transition: color var(--anim);
+}
+.burger__contacts-number:hover, .burger__contacts-number:focus {
+  color: var(--hover-color);
 }/*# sourceMappingURL=main.css.map */

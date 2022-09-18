@@ -1,4 +1,9 @@
 .menu-burger {
+    border: none;
+    color: #212121;
+    background-color: #FFFFFF;
+
+
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -7,4 +12,108 @@
 .menu-burger__open {
     display: block;
 
+}
+
+.menu-burger__btn {
+    color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+
+    border: none;
+    background-color: #ffffff;
+
+    &:active {
+        fill: var(--hover-color);
+    }
+}
+
+.burger__modal {
+    position: relative;
+    padding: 48px 40px;
+    width: 480px;
+    height: 796px;
+    background: #ffffff;
+}
+
+.burger-navigation {
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+}
+
+.burger-navigation__list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.burger-navigation__link {
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #212121;
+    display: inline-block;
+    padding-bottom: 32px;
+    transition: color var(--anim), background-color var(--anim);
+
+    &:hover,
+    &:focus {
+        color: var(--hover-color);
+    }
+}
+
+.burger-navigation__link.condition {
+    color: var(--hover-color);
+}
+
+.burger__contacts {
+    display: flex;
+    flex-direction: column;
+}   
+
+.burger__contacts-mail {
+    text-decoration: none;
+    color: var(--sub-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color var(--anim);
+    &:hover, &:focus {
+        color: var(--hover-color);
+    }
+}
+
+.burger__contacts-number {
+    text-decoration: none;
+    color: var(--sub-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color var(--anim);
+
+    &:hover,
+    &:focus {
+        color: var(--hover-color);
+    }
 }

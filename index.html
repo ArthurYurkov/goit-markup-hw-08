@@ -49,11 +49,11 @@
                         +38 096 111 11 11</a>
                 </div>
                 <!-- menu-burger -->
-                <div class="menu-burger">
+                <button type="button" class="menu-burger">
                     <svg class="menu-burger__open" width="40" height="40">
                         <use href="./images/icons.svg#icon-menu"></use>
                     </svg>
-                </div>
+                </button>
             </div>
         </header>
 
@@ -428,6 +428,7 @@
         </footer>
 
 
+
         <div class="backdrop is-hidden" data-modal>
             <div class="modal" >
                 <button class="modal__btn" data-modal-close>
@@ -482,6 +483,36 @@
                         Відправити
                     </button>
                 </form>
+            </div>
+        </div>
+
+        <div class="backdrop">
+            <div class="burger__modal">
+                <button class="menu-burger__btn">
+                    <svg class="menu-burger__svg" width="40px" height="40px">
+                        <use href="./images/icons.svg#icon-menu-close"></use>
+                    </svg>
+                </button>
+                <nav class="burger-navigation">
+                    <ul class="burger-navigation__list list">
+                        <li class="burger-navigation__point">
+                            <a href="./index.html" class="burger-navigation__link condition">Студія</a>
+                        </li>
+                        <li class="burger-navigation__point">
+                            <a href="./portfolio.html" class="burger-navigation__link ">Портфоліо</a>
+                        </li>
+                        <li class="burger-navigation__point">
+                            <a href="" class="burger-navigation__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Contacts -->
+                <div class="burger__contacts">
+                    <a href="mailto:info@devstudio.com" class="burger__contacts-mail">
+                        info@devstudio.com</a>
+                    <a href="tel:+380961111111" class="burger__contacts-number">
+                        +38 096 111 11 11</a>
+                </div>
             </div>
         </div>
         <script src="./js/modal.js"></script>
