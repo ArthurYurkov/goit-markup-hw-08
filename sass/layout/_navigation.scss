@@ -42,7 +42,7 @@
     content: '';
 
     position: absolute;
-    bottom: -2px;
+    bottom: -1px;
     left: 0;
 
     display: block;
@@ -51,4 +51,7 @@
     border-radius: 4px;
     background-color: var(--hover-color);
     color: var(--hover-color);
+    @media screen and (min-width: 1200px) {
+        bottom: -2px;
+    }
 }
