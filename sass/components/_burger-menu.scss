@@ -14,7 +14,7 @@
 
 }
 
-.menu-burger__btn {
+.menu-burger__open {
     color: #212121;
     display: flex;
     justify-content: center;
@@ -32,12 +32,26 @@
     }
 }
 
-.burger__modal {
-    position: relative;
+.menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
     padding: 48px 40px;
-    width: 480px;
-    height: 796px;
+    width: 100%;
+    height: 100%;
     background: #ffffff;
+
+    transform: translateX(0%);
+    transition: transform 400ms;
+    & .is-open {
+        transform: translateX(100%);
+    }
 }
 
 .burger-navigation {
