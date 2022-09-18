@@ -1,6 +1,8 @@
+.foot__input {
+    text-align: center;
+}
+
 .foot__input-text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -15,10 +17,19 @@
     display: flex;
     align-items: flex-end;
     margin-top: 20px;
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+    }
 }
 
 .foot__send-label {
-    margin-right: 12px;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-right: 12px;
+
+    }
 }
 
 .foot__send-input {
@@ -30,6 +41,9 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: #2f303a;
+    @media screen and (max-width: 1199px) {
+        width: 450px;
+    }
 }
 
 .foot__send-btn {

@@ -2,6 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+    }
 }
 
 .products__list {
@@ -14,6 +17,7 @@
         transform: translatey(0);
     }
 }
+
 
 
 .products__wrapper {
