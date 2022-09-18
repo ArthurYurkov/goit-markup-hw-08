@@ -601,6 +601,12 @@ body {
           align-items: center;
   gap: 30px;
 }
+@media screen and (max-width: 1199px) {
+  .clients__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .clients__point {
   display: -webkit-box;
