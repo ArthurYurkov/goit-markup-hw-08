@@ -18,6 +18,10 @@
     letter-spacing: 0.03em;
 
     color: #757575;
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
 }
 
 .checkbox__text-link {
