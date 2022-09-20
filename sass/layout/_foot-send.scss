@@ -1,5 +1,9 @@
 .foot__input {
-    text-align: center;
+
+    @media screen and (max-width:1199px) {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 .foot__input-text {
@@ -23,26 +27,31 @@
 }
 
 .foot__send-label {
+    width: 100%;
     @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
     }
     @media screen and (min-width:1200px) {
         margin-right: 12px;
+        max-width: 358px;
 
     }
 }
 
 .foot__send-input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding-left: 16px;
-
+    
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: #2f303a;
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
         width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
     }
 }
 
